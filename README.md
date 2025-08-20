@@ -6,7 +6,7 @@ TODOLIST/
   public/
     index.html        ← login (Aula 1.1)
     tarefas.html      ← lista de tarefas (Aula 1.2)
-    blog.html         ← placeholder (para não quebrar links)
+    blog.html         ← final
   src/
     css/              ← Seção 2 (futuro)
     js/               ← Seção 3 (futuro)
