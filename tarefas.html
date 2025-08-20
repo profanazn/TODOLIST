@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>To-Do List | Tarefas</title>
+  <!-- CSS será criado na Seção 2 -->
+  <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Minhas Tarefas</h1>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="tarefas.html" aria-current="page">Tarefas</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html">Sair</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Formulário para adicionar nova tarefa (a lógica JS virá depois) -->
+    <section aria-labelledby="titulo-nova-tarefa">
+      <h2 id="titulo-nova-tarefa">Nova Tarefa</h2>
+      <form id="form-tarefa" action="#" method="post">
+        <div class="campo">
+          <label for="descricao">Descrição</label>
+          <input type="text" id="descricao" name="descricao" required placeholder="Ex.: Estudar HTML5" />
+        </div>
+
+        <div class="campo">
+          <label for="prazo">Prazo</label>
+          <input type="date" id="prazo" name="prazo" />
+        </div>
+
+        <button type="submit" data-js="btn-adicionar">Adicionar</button>
+      </form>
+    </section>
+
+    <!-- Lista de tarefas (estática por enquanto) -->
+    <section aria-labelledby="titulo-lista-tarefas">
+      <h2 id="titulo-lista-tarefas">Minhas Tarefas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Feita</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Prazo</th>
+            <th scope="col">Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-tarefas">
+          <tr data-task-id="1">
+            <td><input type="checkbox" disabled></td>
+            <td>Estudar HTML5</td>
+            <td>2025-08-25</td>
+            <td>
+              <button type="button" disabled aria-label="Excluir tarefa Estudar HTML5">Excluir</button>
+            </td>
+          </tr>
+          <tr data-task-id="2">
+            <td><input type="checkbox" disabled></td>
+            <td>Rever semântica de tabelas</td>
+            <td>2025-08-27</td>
+            <td>
+              <button type="button" disabled aria-label="Excluir tarefa Rever semântica de tabelas">Excluir</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <small>Sistema de Tarefas &amp; Blog – Projeto Acadêmico</small>
+  </footer>
+</body>
+</html>

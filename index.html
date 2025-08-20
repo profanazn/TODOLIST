@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>To-Do List | Login</title>
+  <!-- CSS será criado na Seção 2 -->
+  <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>To-Do List</h1>
+  </header>
+
+  <main>
+    <section id="login" aria-labelledby="titulo-login">
+      <h2 id="titulo-login">Entrar</h2>
+
+      <!-- Em HTML puro por enquanto. O 'action' será implementado depois em PHP -->
+      <form id="form-login" action="/server/login.php" method="post" autocomplete="on">
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required autocomplete="username" />
+        </div>
+
+        <div class="campo">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" required minlength="6" autocomplete="current-password" />
+        </div>
+
+        <button type="submit" data-js="btn-entrar">Entrar</button>
+
+        <p class="ajuda">
+          Não tem conta?
+          <a href="cadastro.html" data-js="link-cadastro">Cadastre-se</a>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <small>Sistema de Tarefas &amp; Blog – Projeto Acadêmico</small>
+  </footer>
+</body>
+</html>
